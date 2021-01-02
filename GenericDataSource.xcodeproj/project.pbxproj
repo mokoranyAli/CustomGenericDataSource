@@ -14,6 +14,10 @@
 		876770C0259D2105003CBFF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 876770BF259D2105003CBFF7 /* Assets.xcassets */; };
 		876770C3259D2105003CBFF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876770C1259D2105003CBFF7 /* LaunchScreen.storyboard */; };
 		876770CE259D2106003CBFF7 /* GenericDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876770CD259D2106003CBFF7 /* GenericDataSourceTests.swift */; };
+		876770DA259D213C003CBFF7 /* CustomDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876770D9259D213C003CBFF7 /* CustomDataSource.swift */; };
+		876770DD259F4758003CBFF7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876770DC259F4758003CBFF7 /* User.swift */; };
+		876770E0259F4C8F003CBFF7 /* DemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876770DE259F4C8F003CBFF7 /* DemoCell.swift */; };
+		876770E1259F4C8F003CBFF7 /* DemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 876770DF259F4C8F003CBFF7 /* DemoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		876770C9259D2106003CBFF7 /* GenericDataSourceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenericDataSourceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		876770CD259D2106003CBFF7 /* GenericDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataSourceTests.swift; sourceTree = "<group>"; };
 		876770CF259D2106003CBFF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		876770D9259D213C003CBFF7 /* CustomDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDataSource.swift; sourceTree = "<group>"; };
+		876770DC259F4758003CBFF7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		876770DE259F4C8F003CBFF7 /* DemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCell.swift; sourceTree = "<group>"; };
+		876770DF259F4C8F003CBFF7 /* DemoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,8 @@
 		876770B5259D2104003CBFF7 /* GenericDataSource */ = {
 			isa = PBXGroup;
 			children = (
+				876770DB259F4728003CBFF7 /* Model */,
+				876770D8259D211A003CBFF7 /* Datasource */,
 				876770B6259D2104003CBFF7 /* AppDelegate.swift */,
 				876770B8259D2104003CBFF7 /* SceneDelegate.swift */,
 				876770BA259D2104003CBFF7 /* ViewController.swift */,
@@ -86,6 +96,8 @@
 				876770BF259D2105003CBFF7 /* Assets.xcassets */,
 				876770C1259D2105003CBFF7 /* LaunchScreen.storyboard */,
 				876770C4259D2105003CBFF7 /* Info.plist */,
+				876770DE259F4C8F003CBFF7 /* DemoCell.swift */,
+				876770DF259F4C8F003CBFF7 /* DemoCell.xib */,
 			);
 			path = GenericDataSource;
 			sourceTree = "<group>";
@@ -97,6 +109,22 @@
 				876770CF259D2106003CBFF7 /* Info.plist */,
 			);
 			path = GenericDataSourceTests;
+			sourceTree = "<group>";
+		};
+		876770D8259D211A003CBFF7 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				876770D9259D213C003CBFF7 /* CustomDataSource.swift */,
+			);
+			path = Datasource;
+			sourceTree = "<group>";
+		};
+		876770DB259F4728003CBFF7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				876770DC259F4758003CBFF7 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +210,7 @@
 			files = (
 				876770C3259D2105003CBFF7 /* LaunchScreen.storyboard in Resources */,
 				876770C0259D2105003CBFF7 /* Assets.xcassets in Resources */,
+				876770E1259F4C8F003CBFF7 /* DemoCell.xib in Resources */,
 				876770BE259D2104003CBFF7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,7 +231,10 @@
 			files = (
 				876770BB259D2104003CBFF7 /* ViewController.swift in Sources */,
 				876770B7259D2104003CBFF7 /* AppDelegate.swift in Sources */,
+				876770E0259F4C8F003CBFF7 /* DemoCell.swift in Sources */,
 				876770B9259D2104003CBFF7 /* SceneDelegate.swift in Sources */,
+				876770DD259F4758003CBFF7 /* User.swift in Sources */,
+				876770DA259D213C003CBFF7 /* CustomDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
